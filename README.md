@@ -11,3 +11,7 @@ to convert ts file to js we type ======== tsc <filename.ts> ========= this creat
 tsc --init ===> this command creates a tsconfig.json file where we can specify the configurations for the ts file
 
 once tsconfig.json file is created, we can just complie all the ts files using just tsc command not tsc <filename.ts> as config file gets into act
+
+
+Object and Array Types:
+
