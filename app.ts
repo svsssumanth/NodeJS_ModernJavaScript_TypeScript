@@ -8,7 +8,22 @@ const numResults: number[] = [];
 const stringResults: string[] = [];
 
 
-function add(num1: number | string, num2: number | string) { // Union TYpes are declared using Pipe symbol
+//TYpe Alias ---> useful when we are having union types
+
+type NumOrString = number | string;
+type Result = { val: number; timestamp: Date };
+
+
+//interfaces are alternate to type alias
+
+interface ResultObj {
+  val: number;
+  timestamp: Date;
+}
+
+
+
+function add(num1: NumOrString, num2: NumOrString ) { // Union TYpes are declared using Pipe symbol
   if (typeof num1 === 'number' && typeof num2 === 'number') {  // type guard as we are running different code for different conditions
     return num1 + num2;
   } else if (typeof num1 === 'string' && typeof num2 === 'string') {
@@ -19,7 +34,7 @@ function add(num1: number | string, num2: number | string) { // Union TYpes are 
 
 //Object Types and Array Types
 
-function printResult(resultObj: { val: number; timestamp: Date }) { //after type definition colon we deine the object structure
+function printResult(resultObj: Result) { //after type definition colon we deine the object structure
   console.log(resultObj.val);
 }
 
