@@ -28,3 +28,8 @@ npm install --save-dev @types/express ---> typescript translation for express li
 in tsconfig.json ---. uncomment moduleReoultion and change value to node
 
 
+
+Once all the routes are defined, complie the ts code using tsc command and then run the project using node app.js
+
+this runs the project and we can test it using postman by hitting the apis
+
