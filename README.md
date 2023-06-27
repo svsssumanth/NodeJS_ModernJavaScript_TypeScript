@@ -33,3 +33,14 @@ Once all the routes are defined, complie the ts code using tsc command and then 
 
 this runs the project and we can test it using postman by hitting the apis
 
+
+//to set the directory where the complied Javascript files are to be stored. we need to uncomment "outDir" in tsconfig.json file 
+
+//rootDirectory for the typescript is set using "rootDir" key in tsconfig.json, so that when we run tsc command to compile to the JS code, typescript will know where to find the code that needs compilation
+
+
+
+In addition, you can find a more complex Node TypeScript project/ project setup here: https://github.com/Microsoft/TypeScript-Node-Starter#typescript-node-starter
+
+This may serve as an additional inspiration on how you can build Node TypeScript projects.
+
