@@ -7,6 +7,29 @@ const buttonElement = document.querySelector('button') as HTMLButtonElement;
 const numResults: number[] = [];
 const stringResults: string[] = [];
 
+//generics type is a type that interacts with other type. array types above are a generic type
+
+//array is lsit of data and it has list which is other type
+
+const numResults1: Array<number> = []; // generic type
+
+
+// A promise is also a generic type
+
+const myPromise = new Promise<string>((resolve, reject) => {
+  setTimeout(() => {
+    resolve('It worked!')
+  }, 1000);
+});
+
+//value that promise resolves to is a generic type
+
+
+myPromise.then((result) => {
+  console.log(result.split('w'));
+})
+
+
 
 //TYpe Alias ---> useful when we are having union types
 

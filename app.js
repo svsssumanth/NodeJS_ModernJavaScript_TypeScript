@@ -5,6 +5,19 @@ const buttonElement = document.querySelector('button');
 //const buttonElement = document.querySelector('button')!;  putting ! at the end tells the ts to ignore if this is null
 const numResults = [];
 const stringResults = [];
+//generics type is a type that interacts with other type. array types above are a generic type
+//array is lsit of data and it has list which is other type
+const numResults1 = []; // generic type
+// A promise is also a generic type
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('It worked!');
+    }, 1000);
+});
+//value that promise resolves to is a generic type
+myPromise.then((result) => {
+    console.log(result.split('w'));
+});
 function add(num1, num2) {
     if (typeof num1 === 'number' && typeof num2 === 'number') { // type guard as we are running different code for different conditions
         return num1 + num2;
