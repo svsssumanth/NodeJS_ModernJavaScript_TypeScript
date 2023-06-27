@@ -15,3 +15,16 @@ once tsconfig.json file is created, we can just complie all the ts files using j
 
 Object and Array Types:
 
+
+
+
+TYpescript and NodeJS
+
+install @types/node package as it will provide typescript translation for JS features ---> with this we can use the normal JS code in typescript
+
+npm install --save-dev @types/express ---> typescript translation for express library
+
+
+in tsconfig.json ---. uncomment moduleReoultion and change value to node
+
+
